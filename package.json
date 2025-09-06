@@ -1,18 +1,25 @@
 {
-    "$schema": "https://json.schemastore.org/package.json",
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "build": "vite build",
-        "dev": "vite",
-        "fix": "npx npm-check-updates -u && npm install && npm audit fix --force && npm prune && npm install && npm update"
-    },
-    "devDependencies": {
-        "@tailwindcss/vite": "^4.1.11",
-        "axios": "^1.11.0",
-        "concurrently": "^9.2.0",
-        "laravel-vite-plugin": "^2.0.0",
-        "tailwindcss": "^4.1.11",
-        "vite": "^7.0.6"
-    }
+  "$schema": "https://json.schemastore.org/package.json",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "fix": "npx npm-check-updates -u && npm install && npm audit fix --force && npm prune && npm install && npm update",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:md": "prettier --write **/*.md"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "axios": "^1.11.0",
+    "concurrently": "^9.2.1",
+    "laravel-vite-plugin": "^2.0.1",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.4"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.16"
+  }
 }

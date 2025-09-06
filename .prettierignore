@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+public/build/
+public/hot
+
+# Laravel specific
+storage/
+bootstrap/cache/
+.env*
+
+# Version control
+.git/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+

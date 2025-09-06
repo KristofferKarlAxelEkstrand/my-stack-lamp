@@ -7,18 +7,23 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
-    zip \
-    unzip \
     libzip-dev \
     libfreetype6-dev \
     libjpeg62-turbo-dev \
     libmcrypt-dev \
     libgd-dev \
+    libicu-dev \
+    libxml2-dev \
     jpegoptim optipng pngquant gifsicle \
     vim \
-    nodejs \
-    npm \
+    htop \
+    tree \
     mariadb-client \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js 20.x
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
@@ -31,7 +36,9 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
     bcmath \
     gd \
     zip \
-    opcache
+    opcache \
+    intl \
+    soap
 
 # Install Xdebug for development
 RUN pecl install xdebug \

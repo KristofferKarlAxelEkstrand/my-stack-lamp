@@ -6,9 +6,9 @@ If you see the error "container is not running" or the dev container fails to st
 
 ### 1. Check Docker Desktop
 
--   Ensure Docker Desktop is running and functioning
--   Check that you have enough disk space and memory
--   Try restarting Docker Desktop
+- Ensure Docker Desktop is running and functioning
+- Check that you have enough disk space and memory
+- Try restarting Docker Desktop
 
 ### 2. Clean Up Previous Containers
 
@@ -22,29 +22,29 @@ docker volume prune -f
 
 In VS Code:
 
--   Press `Ctrl+Shift+P`
--   Select "Dev Containers: Rebuild Container Without Cache"
--   Wait for the complete rebuild process
+- Press `Ctrl+Shift+P`
+- Select "Dev Containers: Rebuild Container Without Cache"
+- Wait for the complete rebuild process
 
 ### 4. Check Port Conflicts
 
 Make sure these ports are not in use by other applications:
 
--   Port 80 (Apache)
--   Port 3306 (MariaDB)
--   Port 8080 (phpMyAdmin)
+- Port 80 (Apache)
+- Port 3306 (MariaDB)
+- Port 8080 (phpMyAdmin)
 
 ### 5. Windows-Specific Issues
 
 #### WSL2 Integration
 
--   Ensure Docker Desktop has WSL2 integration enabled
--   Check that your project is in a proper location (not on a network drive)
+- Ensure Docker Desktop has WSL2 integration enabled
+- Check that your project is in a proper location (not on a network drive)
 
 #### File Permissions
 
--   Make sure your Windows user has permissions to the project folder
--   Try running VS Code as Administrator if needed
+- Make sure your Windows user has permissions to the project folder
+- Try running VS Code as Administrator if needed
 
 ### 6. Manual Container Check
 
@@ -79,21 +79,21 @@ docker-compose up -d
 
 ### "Error response from daemon: container ... is not running"
 
--   This indicates the container started but immediately exited
--   Check container logs: `docker logs lamp-web`
--   Usually caused by Apache configuration issues or missing files
+- This indicates the container started but immediately exited
+- Check container logs: `docker logs lamp-web`
+- Usually caused by Apache configuration issues or missing files
 
 ### "Container lamp-web Started" but then fails
 
--   The container starts but Apache fails to run properly
--   Check the Apache error logs in the `logs/` directory
--   Verify all required files are present
+- The container starts but Apache fails to run properly
+- Check the Apache error logs in the `logs/` directory
+- Verify all required files are present
 
 ### "Shell server terminated (code: 1)"
 
--   The container's shell is not accessible
--   Usually indicates the container crashed during startup
--   Check Docker logs for the specific error
+- The container's shell is not accessible
+- Usually indicates the container crashed during startup
+- Check Docker logs for the specific error
 
 ## Recovery Steps
 

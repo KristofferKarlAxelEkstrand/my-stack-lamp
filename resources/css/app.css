@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import '@tailwindcss/typography';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,6 +7,32 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+  --color-hej-50: #f8fafc;
+  --color-hej-100: #f1f5f9;
+  --color-hej-200: #e2e8f0;
+  --color-hej-300: #cbd5e1;
+  --color-hej-400: #94a3b8;
+  --color-hej-500: #64748b;
+  --color-hej-600: #475569;
+  --color-hej-700: #334155;
+  --color-hej-800: #1e293b;
+  --color-hej-900: #0f172a;
+
+  --color-primary-50: #eff6ff;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  --color-secondary-50: #f8fafc;
+  --color-secondary-500: #64748b;
+  --color-secondary-600: #475569;
+  --color-secondary-700: #334155;
+  --color-secondary-800: #1e293b;
+  --color-secondary-900: #0f172a;
+
+  --font-sans:
+    'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
 }
